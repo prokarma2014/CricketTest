@@ -36,10 +36,11 @@ public class TestNegativeLogin {
 		//JavascriptExecutor jse = (JavascriptExecutor)driver;
 		driver.get("http://localhost:8080/CricWebApp-0.0.1-SNAPSHOT/login.do");
 		driver.findElement(By.name("userName")).sendKeys(uname);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		driver.findElement(By.name("password")).sendKeys(pwd);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		driver.findElement(By.tagName("input")).click();
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/form/div[2]/table/tbody/tr[3]/td/input")).click();
 		Thread.sleep(3000);
 	    //Object str=jse.executeScript("document.getElementById('loginform').firstElementChild.innerHTML");
